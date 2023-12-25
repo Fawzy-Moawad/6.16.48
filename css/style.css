@@ -150,7 +150,7 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  top: 50px;
+  top: 20px;
   height: 70px;
   z-index: 997;
   transition: all 0.5s;
@@ -177,7 +177,7 @@ h6 {
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
-  color: #00A552;
+  color: #A8181B;
   text-decoration: none;
 }
 

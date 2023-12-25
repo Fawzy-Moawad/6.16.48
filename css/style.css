@@ -48,7 +48,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #5c9f24;
+  background: #00A552;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -62,7 +62,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #6fc02c;
+  background: #00A552;
   color: #fff;
 }
 
@@ -102,7 +102,7 @@ h6 {
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
-  color: #fff;
+  color: #00A552;
   text-decoration: none;
 }
 
@@ -146,8 +146,8 @@ h6 {
   justify-content: space-between;
   padding: 0 4px;
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
   color: rgba(255, 255, 255, 0.7);
   white-space: nowrap;
   transition: 0.3s;
@@ -169,7 +169,7 @@ h6 {
   height: 2px;
   bottom: -6px;
   left: 0;
-  background-color: #5c9f24;
+  background-color: #00A552;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -186,7 +186,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #fff;
+  color: #E91B23;
 }
 
 .navbar .getstarted,
@@ -221,7 +221,7 @@ h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.7);
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
 }
@@ -232,8 +232,8 @@ h6 {
 
 .navbar .dropdown ul a {
   padding: 10px 20px;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 600;
   text-transform: none;
   color: #2a2a2a;
 }
@@ -245,7 +245,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #5c9f24;
+  color: #A8181B;
 }
 
 .navbar .dropdown:hover>ul {
@@ -281,7 +281,7 @@ h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fff;
+  color: #00A552;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -290,7 +290,7 @@ h6 {
 }
 
 .mobile-nav-toggle.bi-x {
-  color: #5c9f24;
+  color: #00A552;
 }
 
 @media (max-width: 991px) {
@@ -344,7 +344,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #5c9f24;
+  color: #A8181B;
 }
 
 .navbar-mobile>ul>li {
@@ -445,21 +445,21 @@ h6 {
 }
 
 #hero h2 {
-  color: #fff;
+  color: #00A552;
   margin-bottom: 30px;
   font-size: 30px;
   font-weight: 700;
 }
 
 #hero h2 span {
-  color: #ffb03b;
+  color: #A8181B;
 }
 
 #hero p {
   width: 80%;
   animation-delay: 0.4s;
   margin: 0 auto 30px auto;
-  color: #fff;
+  color: #FFFFFF;
 }
 
 #hero .carousel-inner .carousel-item {
@@ -498,7 +498,7 @@ h6 {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 50px;
   transition: 0.3s;
-  color: rgba(255, 255, 255, 0.5);
+  color: #00A552;
   width: 54px;
   height: 54px;
   display: flex;
@@ -509,7 +509,7 @@ h6 {
 #hero .carousel-control-next-icon:hover,
 #hero .carousel-control-prev-icon:hover {
   background: rgba(255, 255, 255, 0.3);
-  color: rgba(255, 255, 255, 0.8);
+  color: #A8181B;
 }
 
 #hero .carousel-indicators li {
@@ -661,7 +661,7 @@ section {
 # About
 --------------------------------------------------------------*/
 .about {
-  background: #fffaf3;
+  background: #FFFFFF;
 }
 
 .about .content {

@@ -1,10 +1,3 @@
-/**
-* Template Name: Delicious
-* Updated: Sep 18 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
@@ -12,6 +5,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+  background-color: #FFFFFF;
 }
 
 a {
@@ -54,10 +48,10 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #ffb03b;
+  background: #5c9f24;
   width: 40px;
   height: 40px;
-  border-radius: 50px;
+  border-radius: 4px;
   transition: all 0.4s;
 }
 
@@ -68,45 +62,13 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #ffc064;
+  background: #6fc02c;
   color: #fff;
 }
 
 .back-to-top.active {
   visibility: visible;
   opacity: 1;
-}
-
-/*--------------------------------------------------------------
-# Top Bar
---------------------------------------------------------------*/
-#topbar {
-  padding: 0;
-  font-size: 15px;
-  height: 50px;
-  transition: all 0.5s;
-  background: rgba(26, 24, 22, 0.8);
-  z-index: 996;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-#topbar.topbar-transparent {
-  background: transparent;
-}
-
-#topbar.topbar-scrolled {
-  top: -50px;
-}
-
-#topbar i {
-  color: #ffb03b;
-  line-height: 0;
-}
-
-#topbar i span {
-  color: #fff;
-  font-style: normal;
-  padding-left: 5px;
 }
 
 /*--------------------------------------------------------------
@@ -151,35 +113,6 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Book a table button Menu
---------------------------------------------------------------*/
-.book-a-table-btn {
-  background: #ffb03b;
-  color: #fff;
-  border-radius: 50px;
-  margin: 0 0 0 20px;
-  padding: 10px 25px;
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  transition: 0.3s;
-  white-space: nowrap;
-}
-
-.book-a-table-btn:hover {
-  background: #ffa012;
-  color: #fff;
-}
-
-@media (max-width: 992px) {
-  .book-a-table-btn {
-    margin: 0 15px 0 0;
-    padding: 8px 20px;
-    letter-spacing: 1px;
-  }
-}
-
-/*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
@@ -201,17 +134,25 @@ h6 {
   position: relative;
 }
 
+.navbar>ul>li {
+  white-space: nowrap;
+  padding: 10px 0 10px 22px;
+}
+
 .navbar a,
 .navbar a:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 10px 24px;
-  font-size: 15px;
+  padding: 0 4px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
   font-weight: 500;
-  color: white;
+  color: rgba(255, 255, 255, 0.7);
   white-space: nowrap;
   transition: 0.3s;
+  text-transform: uppercase;
+  position: relative;
 }
 
 .navbar a i,
@@ -221,17 +162,59 @@ h6 {
   margin-left: 5px;
 }
 
+.navbar>ul>li>a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background-color: #5c9f24;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar a:hover:before,
+.navbar li:hover>a:before,
+.navbar .active:before {
+  visibility: visible;
+  width: 100%;
+}
+
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #ffb03b;
+  color: #fff;
+}
+
+.navbar .getstarted,
+.navbar .getstarted:focus {
+  padding: 8px 25px;
+  margin-left: 12px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  border: 2px solid #5c9f24;
+}
+
+.navbar .getstarted:hover,
+.navbar .getstarted:focus:hover {
+  color: #fff;
+  background: #5c9f24;
+}
+
+.navbar .getstarted:hover:before,
+.navbar li:hover>.getstarted:before {
+  visibility: hidden;
 }
 
 .navbar .dropdown ul {
   display: block;
   position: absolute;
-  left: 24px;
+  left: 22px;
   top: calc(100% + 30px);
   margin: 0;
   padding: 10px 0;
@@ -241,7 +224,6 @@ h6 {
   background: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
-  border-radius: 4px;
 }
 
 .navbar .dropdown ul li {
@@ -251,8 +233,9 @@ h6 {
 .navbar .dropdown ul a {
   padding: 10px 20px;
   font-size: 14px;
-  font-weight: 400;
-  color: #433f39;
+  font-weight: 500;
+  text-transform: none;
+  color: #2a2a2a;
 }
 
 .navbar .dropdown ul a i {
@@ -262,7 +245,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #ffb03b;
+  color: #5c9f24;
 }
 
 .navbar .dropdown:hover>ul {
@@ -306,6 +289,10 @@ h6 {
   transition: 0.5s;
 }
 
+.mobile-nav-toggle.bi-x {
+  color: #5c9f24;
+}
+
 @media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
@@ -323,9 +310,9 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(39, 37, 34, 0.9);
+  background: rgba(17, 17, 17, 0.9);
   transition: 0.3s;
-  z-index: 0;
+  z-index: 999;
 }
 
 .navbar-mobile .mobile-nav-toggle {
@@ -342,7 +329,6 @@ h6 {
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  border-radius: 8px;
   background-color: #fff;
   overflow-y: auto;
   transition: 0.3s;
@@ -352,18 +338,31 @@ h6 {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #433f39;
+  color: #2a2a2a;
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #ffb03b;
+  color: #5c9f24;
+}
+
+.navbar-mobile>ul>li {
+  white-space: nowrap;
+  padding: 0;
+}
+
+.navbar-mobile a:hover:before,
+.navbar-mobile li:hover>a:before,
+.navbar-mobile .active:before {
+  visibility: hidden;
 }
 
 .navbar-mobile .getstarted,
 .navbar-mobile .getstarted:focus {
   margin: 15px;
+  color: #5c9f24;
+  padding-left: 15px;
 }
 
 .navbar-mobile .dropdown ul {
@@ -393,12 +392,13 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #ffb03b;
+  color: #5c9f24;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
 }
+
 
 /*--------------------------------------------------------------
 # Hero Section

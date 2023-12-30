@@ -693,23 +693,24 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Whu Us
+#History
 --------------------------------------------------------------*/
-.why-us .box {
+.history .box {
   padding: 50px 30px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   transition: all ease-in-out 0.3s;
   height: 100%;
+  cursor: pointer;
 }
 
-.why-us .box span {
+.history .box span {
   display: block;
   font-size: 28px;
   font-weight: 700;
   color: #5c9f24;
 }
 
-.why-us .box h4 {
+.history .box h4 {
   font-size: 24px;
   font-weight: 600;
   padding: 0;
@@ -717,22 +718,22 @@ section {
   color: #ed3c0d;
 }
 
-.why-us .box p {
+.history .box p {
   color: #2a2a2a;
   font-size: 15px;
   margin: 0;
   padding: 0;
 }
 
-.why-us .box:hover {
+.history .box:hover {
   background: #ed3c0d;
   padding: 30px 30px 70px 30px;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
 
-.why-us .box:hover span,
-.why-us .box:hover h4,
-.why-us .box:hover p {
+.history .box:hover span,
+.history .box:hover h4,
+.history .box:hover p {
   color: #fff;
 }
 

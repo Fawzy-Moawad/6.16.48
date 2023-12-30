@@ -739,7 +739,70 @@ section {
 /*--------------------------------------------------------------
 # Gallery
 --------------------------------------------------------------*/
+img {
+  display: block;
+  max-width: 100%;
+}
 
+.stack {
+  max-width: 400px;
+  transition: .25s ease;
+}
+
+.stack:hover {			
+  transform: rotate(5deg);
+}
+
+.card-card {
+  aspect-ratio: 3 / 2;
+  border: 2px solid; /* Smaller border */
+  background-color: #FFF;
+  position: relative;
+  transition: .15s ease;
+  cursor: pointer;
+  padding: 2% 2% 8% 2%; /* Smaller padding */
+}
+
+.card-card:before,
+.card-card:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: 2px solid; /* Smaller border */
+  background-color: #FFF;
+  transform-origin: center center;
+  z-index: -1;
+  transition: .15s ease;
+  top: 0;
+  left: 0;
+}
+
+.card-card:before {
+  transform: translateY(-1%) rotate(-6deg); /* Adjusted translation */
+}
+
+.card-card:after {
+  transform: translateY(1%) rotate(6deg); /* Adjusted translation */
+}
+
+.card-image {
+  border: 2px solid; /* Smaller border */
+  background-color: #EEE;
+  aspect-ratio: 1 / 1;
+  position: relative;
+}
+
+.browser-warning {
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 576px) {
+  .stack {
+    max-width: 100%;
+  }
+}
 /*--------------------------------------------------------------
 # Frequently Asked Questions
 --------------------------------------------------------------*/
@@ -1142,72 +1205,4 @@ section {
   text-align: center;
   font-size: 13px;
   color: #fff;
-}
-
-/*-----------------------
-
------------------------*/
-img {
-  display: block;
-  max-width: 100%;
-}
-
-.stack {
-  max-width: 400px;
-  transition: .25s ease;
-}
-
-.stack:hover {			
-  transform: rotate(5deg);
-}
-
-.card-card {
-  aspect-ratio: 3 / 2;
-  border: 2px solid; /* Smaller border */
-  background-color: #FFF;
-  position: relative;
-  transition: .15s ease;
-  cursor: pointer;
-  padding: 2% 2% 8% 2%; /* Smaller padding */
-}
-
-.card-card:before,
-.card-card:after {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  border: 2px solid; /* Smaller border */
-  background-color: #FFF;
-  transform-origin: center center;
-  z-index: -1;
-  transition: .15s ease;
-  top: 0;
-  left: 0;
-}
-
-.card-card:before {
-  transform: translateY(-1%) rotate(-6deg); /* Adjusted translation */
-}
-
-.card-card:after {
-  transform: translateY(1%) rotate(6deg); /* Adjusted translation */
-}
-
-.card-image {
-  border: 2px solid; /* Smaller border */
-  background-color: #EEE;
-  aspect-ratio: 1 / 1;
-  position: relative;
-}
-
-.browser-warning {
-  margin-bottom: 4rem;
-}
-
-@media (max-width: 576px) {
-  .stack {
-    max-width: 100%;
-  }
 }

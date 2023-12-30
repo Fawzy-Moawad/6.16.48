@@ -282,3 +282,12 @@ new Swiper('.gallery-slider', {
   }
 });
 
+
+
+
+
+function showMore() {
+  // Show the hidden questions and "Show More" button when clicked
+  document.getElementById("faq-list-6").classList.add("show");
+  document.getElementById("faq-list-show-more").style.display = "none"; // Hide the "Show More" button
+}

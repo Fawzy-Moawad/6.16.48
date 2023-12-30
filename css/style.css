@@ -633,7 +633,7 @@ section {
 }
 
 .section-title h2 span {
-  color: #ffb03b;
+  color: #A8181B;
 }
 
 .section-title p {
@@ -706,7 +706,7 @@ section {
   display: block;
   font-size: 28px;
   font-weight: 700;
-  color: #ffcf88;
+  color: #5c9f24;
 }
 
 .why-us .box h4 {
@@ -714,18 +714,18 @@ section {
   font-weight: 600;
   padding: 0;
   margin: 20px 0;
-  color: #6c665c;
+  color: #ed3c0d;
 }
 
 .why-us .box p {
-  color: #aaaaaa;
+  color: #2a2a2a;
   font-size: 15px;
   margin: 0;
   padding: 0;
 }
 
 .why-us .box:hover {
-  background: #ffb03b;
+  background: #ed3c0d;
   padding: 30px 30px 70px 30px;
   box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
 }
@@ -933,7 +933,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #ffb03b;
+  background: #18d26e;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -942,7 +942,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #ffa012;
+  background: #ed3c0d;
 }
 
 @keyframes animate-loading {
@@ -1142,4 +1142,72 @@ section {
   text-align: center;
   font-size: 13px;
   color: #fff;
+}
+
+/*-----------------------
+
+-----------------------*/
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.stack {
+  max-width: 400px;
+  transition: .25s ease;
+}
+
+.stack:hover {			
+  transform: rotate(5deg);
+}
+
+.card-card {
+  aspect-ratio: 3 / 2;
+  border: 2px solid; /* Smaller border */
+  background-color: #FFF;
+  position: relative;
+  transition: .15s ease;
+  cursor: pointer;
+  padding: 2% 2% 8% 2%; /* Smaller padding */
+}
+
+.card-card:before,
+.card-card:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border: 2px solid; /* Smaller border */
+  background-color: #FFF;
+  transform-origin: center center;
+  z-index: -1;
+  transition: .15s ease;
+  top: 0;
+  left: 0;
+}
+
+.card-card:before {
+  transform: translateY(-1%) rotate(-6deg); /* Adjusted translation */
+}
+
+.card-card:after {
+  transform: translateY(1%) rotate(6deg); /* Adjusted translation */
+}
+
+.card-image {
+  border: 2px solid; /* Smaller border */
+  background-color: #EEE;
+  aspect-ratio: 1 / 1;
+  position: relative;
+}
+
+.browser-warning {
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 576px) {
+  .stack {
+    max-width: 100%;
+  }
 }

@@ -1051,7 +1051,7 @@ margin-top: 5px;
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
   padding: 30px;
-  background: #fff;
+  background: #262628;
 }
 
 .contact .php-email-form .form-group {
@@ -1100,6 +1100,7 @@ margin-top: 5px;
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
+  background-color: #7F816A;
 }
 
 .contact .php-email-form input {

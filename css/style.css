@@ -10,11 +10,11 @@ body {
 
 a {
   text-decoration: none;
-  color: #ffb03b;
+  color: #7F816A;
 }
 
 a:hover {
-  color: #ffc56e;
+  color: #A8181B;
   text-decoration: none;
 }
 
@@ -612,12 +612,6 @@ h6 {
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
-
-
-.section-bg {
-  background-color: white;
-}
-
 .section-title {
   text-align: center;
   padding-bottom: 30px;
@@ -941,7 +935,7 @@ margin-top: 5px;
 
 .faq .faq-list li {
   padding: 20px;
-  background: #fff;
+  background: #262628;
   border-radius: 4px;
   position: relative;
 }
@@ -963,7 +957,7 @@ margin-top: 5px;
   position: absolute;
   right: 0;
   left: 20px;
-  color: #9cdc66;
+  color: #00A552;
 }
 
 .faq .faq-list .icon-show,
@@ -977,6 +971,7 @@ margin-top: 5px;
 .faq .faq-list p {
   margin-bottom: 0;
   padding: 10px 0 0 0;
+  color: #FFFFFF;
 }
 
 .faq .faq-list .icon-show {
@@ -984,7 +979,7 @@ margin-top: 5px;
 }
 
 .faq .faq-list a.collapsed {
-  color: #343a40;
+  color: #7F816A;
 }
 
 .faq .faq-list a.collapsed:hover {

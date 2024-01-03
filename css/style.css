@@ -698,6 +698,7 @@ h6 {
   transition: all ease-in-out 0.3s;
   height: 100%;
   cursor: pointer;
+  background-color: #262628;
 }
 
 .history .box span {
@@ -716,7 +717,7 @@ h6 {
 }
 
 .history .box p {
-  color: #2a2a2a;
+  color: #E0C5AE;
   font-size: 15px;
   margin: 0;
   padding: 0;

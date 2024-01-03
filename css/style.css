@@ -113,6 +113,79 @@ h6 {
   background-blend-mode: multiply;
   overflow: hidden; /* Hide overflowing content */
 }
+
+.banner-8 {
+  width: 75%;
+  margin-left: calc(50% - 50vw);
+  width: 100vw;
+  height: 62.5vmin;
+  min-height: 15em;
+  background: linear-gradient(#000, transparent, #000),
+              url('../img/banner/08.jpg') 50% / cover fixed; /* Use fixed background-attachment */
+  background-blend-mode: multiply;
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.banner-9 {
+  width: 75%;
+  margin-left: calc(50% - 50vw);
+  width: 100vw;
+  height: 62.5vmin;
+  min-height: 15em;
+  background: linear-gradient(#000, transparent, #000),
+              url('../img/banner/09.jpg') 50% / cover fixed; /* Use fixed background-attachment */
+  background-blend-mode: multiply;
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.banner-10 {
+  width: 75%;
+  margin-left: calc(50% - 50vw);
+  width: 100vw;
+  height: 62.5vmin;
+  min-height: 15em;
+  background: linear-gradient(#000, transparent, #000),
+              url('../img/banner/10.jpg') 50% / cover fixed; /* Use fixed background-attachment */
+  background-blend-mode: multiply;
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.banner-11 {
+  width: 75%;
+  margin-left: calc(50% - 50vw);
+  width: 100vw;
+  height: 62.5vmin;
+  min-height: 15em;
+  background: linear-gradient(#000, transparent, #000),
+              url('../img/banner/11.jpg') 50% / cover fixed; /* Use fixed background-attachment */
+  background-blend-mode: multiply;
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.banner-12 {
+  width: 75%;
+  margin-left: calc(50% - 50vw);
+  width: 100vw;
+  height: 62.5vmin;
+  min-height: 15em;
+  background: linear-gradient(#000, transparent, #000),
+              url('../img/banner/12.jpg') 50% / cover fixed; /* Use fixed background-attachment */
+  background-blend-mode: multiply;
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.banner-13 {
+  width: 75%;
+  margin-left: calc(50% - 50vw);
+  width: 100vw;
+  height: 62.5vmin;
+  min-height: 15em;
+  background: linear-gradient(#000, transparent, #000),
+              url('../img/banner/13.jpg') 50% / cover fixed; /* Use fixed background-attachment */
+  background-blend-mode: multiply;
+  overflow: hidden; /* Hide overflowing content */
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -327,6 +400,7 @@ h6 {
   opacity: 1;
   top: 100%;
   visibility: visible;
+  background-color: #7F816A;
 }
 
 .navbar .dropdown .dropdown ul {

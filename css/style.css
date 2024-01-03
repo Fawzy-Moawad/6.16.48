@@ -634,12 +634,6 @@ h6 {
   color: #E0C5AE;
 }
 
-@media (min-width: 1024px) {
-  .section-title p {
-    width: 50%;
-  }
-}
-
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -739,6 +733,7 @@ h6 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 15px;
+  cursor: pointer;
 }
 
 .card{
@@ -833,6 +828,7 @@ margin-top: 5px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 15px;
+  cursor: pointer;
 }
 
 .map-card{

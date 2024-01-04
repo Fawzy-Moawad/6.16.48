@@ -684,6 +684,140 @@ h6 {
 }
 
 /*--------------------------------------------------------------
+# Other Hero Section
+--------------------------------------------------------------*/
+#other-hero {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(39, 37, 34, 0.8);
+  overflow: hidden;
+  padding: 0;
+}
+
+#other-hero .other-carousel-item {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#other-hero .other-carousel-item::before {
+  content: "";
+  background-color: rgba(12, 11, 10, 0.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#other-hero .other-carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#other-hero .other-carousel-content {
+  text-align: center;
+}
+
+#other-hero h2 {
+  color: #A8181B;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#other-hero h2 span {
+  color: black;
+}
+
+#other-hero p {
+  width: 80%;
+  animation-delay: 0.4s;
+  margin: 0 auto 30px auto;
+  color: #FFFFFF;
+}
+
+#other-hero .other-carousel-inner .other-carousel-item {
+  transition-property: opacity;
+  background-position: centerother- top;
+}
+
+#other-hero .other-carousel-inner .other-carousel-item,
+#other-hero .other-carousel-inner .active .other-carousel-item-start,
+#other-hero .other-carousel-inner .active .other-carousel-item-end {
+  opacity: 0;
+}
+
+#other-hero .other-carousel-inner .active,
+#other-hero .other-carousel-inner .other-carousel-item-next.other-carousel-item-start,
+#other-hero .other-carousel-inner .other-carousel-item-prev.other-carousel-item-end {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#other-hero .other-carousel-inner .other-carousel-item-next,
+#other-hero .other-carousel-inner .other-carousel-item-prev,
+#other-hero .other-carousel-inner .active.other-carousel-item-start,
+#other-hero .other-carousel-inner .active.other-carousel-item-end {
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+
+#other-hero .other-carousel-control-next-icon,
+#other-hero .other-carousel-control-prev-icon {
+  background: none;
+  font-size: 30px;
+  line-height: 0;
+  width: auto;
+  height: auto;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  transition: 0.3s;
+  color: #00A552;
+  width: 54px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#other-hero .other-carousel-control-next-icon:hover,
+#other-hero .other-carousel-control-prev-icon:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: #A8181B;
+}
+
+#other-hero .other-carousel-indicators li {
+  cursor: pointer;
+  list-style-type: none;
+}
+
+@media (max-width: 768px) {
+  #other-hero h2 {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #other-hero p {
+    width: 50%;
+  }
+
+  #other-hero .other-carousel-control-prev,
+  #other-hero .other-carousel-control-next {
+    width: 5%;
+  }
+}
+
+/*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
 .section-title {

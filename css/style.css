@@ -842,6 +842,46 @@ h6 {
   color: #E0C5AE;
 }
 
+/*----------------------------------------
+#Home page section
+----------------------------------------*/
+.home-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.home-section-title {
+  width: 100%;
+  max-width: 400px; /* Adjust as needed */
+  margin-bottom: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+span {
+  color: #7F816A;
+}
+
+p {
+  color: #E0C5AE;
+  margin: 0;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .home-section-title {
+      max-width: 100%;
+  }
+}
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/

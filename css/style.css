@@ -687,14 +687,15 @@ h6 {
 # Other Hero Section
 --------------------------------------------------------------*/
 #other-hero {
+  position: relative;
   width: 100%;
   height: 100vh;
-  background-color: rgba(39, 37, 34, 0.8);
   overflow: hidden;
   padding: 0;
 }
 
 #other-hero .other-carousel-item {
+  position: relative;
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -747,7 +748,7 @@ h6 {
 
 #other-hero .other-carousel-inner .other-carousel-item {
   transition-property: opacity;
-  background-position: centerother- top;
+  background-position: center other- top;
 }
 
 #other-hero .other-carousel-inner .other-carousel-item,
@@ -816,6 +817,7 @@ h6 {
     width: 5%;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Sections General
